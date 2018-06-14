@@ -136,6 +136,7 @@
         /*background-color: red;*/
 
       }
+
       #carousel img {
         visibility:hidden; /* hide images until carousel can handle them */
         cursor:pointer; /* otherwise it's not as obvious items can be clicked */
@@ -405,14 +406,17 @@
 
   			<!---  Create service menu for above division---->
 
-  			<div id="service_menu" class="container ">
+  			<fieldset id="hidden_fieldset_id" class="fieldset_class hidden_service_container">
+                <legend class="legend_class_serv"><b> SERVICES </b></legend>
+
+                <div id="service_menu" class="">
 
   				<div class="container service_open_container">
   					<div class ="row">
-  						<div class="col-2">
+  						<div class="col-2 service_list_class">
   							<div class="row service_item_row " style="top:2%">
   								<a id="service_item_1" class="service_item active" href="" onclick="show_service_content(this.id);return false">
-                  <h4 id="service_item_1h" class="service_header"> AUDIT AND ASSURANCE </h4></a>
+                  <h4 id="service_item_1h" class="service_header">AUDIT AND ASSURANCE </h4></a>
 
   							</div>
 
@@ -707,55 +711,9 @@
 
   			</div>
 
-<script type="text/javascript">
-	
-	function show_service_content(item_id){
-		hide_service_content_division();
-    // alert(item_id);
-		var temp = item_id.substring(13, 14);
-    
 
+            </fieldset>
 
-		if((temp == 1 || item_id == 1)){
-       
-			$("#div1").fadeIn(2000);
-      $('#service_item_1h').css({'font-weight':'bolder'});
-		}
-		if((temp == 2 || item_id == 2)){
-       $('#service_item_2h').css({'font-weight':'bolder'});
-			$("#div2").fadeIn(2000);
-		}
-		if((temp == 3 || item_id == 3)){
-       $('#service_item_3h').css({'font-weight':'bolder'});
-			$("#div3").fadeIn(2000);
-		}
-		if((temp == 4 || item_id == 4)){
-       $('#service_item_4h').css({'font-weight':'bolder'});
-			$("#div4").fadeIn(2000);
-		}
-			if((temp == 5 || item_id == 5)){
-         $('#service_item_5h').css({'font-weight':'bolder'});
-			$("#div5").fadeIn(2000);
-		}
-		if((temp == 6 || item_id == 6)){
-       $('#service_item_6h').css({'font-weight':'bolder'});
-			$("#div6").fadeIn(2000);
-		}
-		if((temp == 7 || item_id == 7)){
-       $('#service_item_7h').css({'font-weight':'bolder'});
-			$("#div7").fadeIn(2000);
-		}
-		if((temp == 8 || item_id == 8)){
-       $('#service_item_8h').css({'font-weight':'bolder'});
-			$("#div8").fadeIn(2000);
-		}
-
-
-
-	}
-
-
-</script>
 
 
   			
@@ -800,7 +758,7 @@
                   </div>
 
                   <div class="container text-center member_info_class">
-                     <b>First Member </b>
+                     <b>Hiren Patel </b>
                      <p>(Degree info)</p>
                   </div>
                     
@@ -816,7 +774,7 @@
                   </div>
 
                   <div class="container text-center member_info_class">
-                    <b> Second Member </b>
+                    <b> Ashok Patel </b>
                      <p>(Degree info)</p>
                   </div>
                     
@@ -831,7 +789,7 @@
                   </div>
 
                   <div class="container text-center member_info_class">
-                     <b>Third Member </b>
+                     <b>Jignesh Parikh </b>
                      <p>(Degree info)</p>
                   </div>
                     
@@ -847,7 +805,7 @@
 
 
                   <div class="container text-center member_info_class">
-                    <b> Fourth Member </b>
+                    <b> Neelkanth </b>
                      <p>(Degree info)</p>
                   </div>
                     
@@ -864,7 +822,7 @@
                   </div>
 
                   <div class="container text-center member_info_class">
-                    <b> Fifth Member </b>
+                    <b> Sunil Patel </b>
                      <p>(Degree info)</p>
                   </div>
                     
@@ -898,6 +856,8 @@
                   <img class="img-responsive member_image_class"  src="{% static 'images/new_member2.png' %}" id="item-2" onclick="show_member_details(this.id);return false" />
 
                   <img class="img-responsive member_image_class"  src="{% static 'images/new_member3.png' %}" id="item-3" onclick="show_member_details(this.id);return false" />
+
+                  <img class="img-responsive member_image_class"  src="{% static 'images/new.jpeg' %}" id="item-4" onclick="show_member_details(this.id);return false" />
 
                   <img class="img-responsive member_image_class"  src="{% static 'images/new_member4.png' %}" id="item-5" onclick="show_member_details(this.id);return false"/>
 
@@ -1152,7 +1112,7 @@
 			</div>
 		</div>
 
-<div  class="container career_body_container">
+<div  class="container blog_body_container">
 
   <fieldset class="career_field_class">
     <legend class="legend_class" style="margin-left: 3%;" ><b class="career_class">BLOG</b></legend>
@@ -1398,13 +1358,13 @@ function openmap() {
 
 			<div class="row footer bg-light">
 				<div class="col">
-					<p class="text-center">Patel&Jesalpura,Chartered Accountant</p>
+					<h5 class="text-center">Patel&Jesalpura,Chartered Accountant</h5>
 				</div>
 				<div class="col">
-					<p class="text-center">Copyright &copy; 2018</p>
+					<h5 class="text-center">Copyright &copy; 2018</h5>
 				</div>
 				<div class="col">
-					<p class="text-center">Powered by: <a href="http://www.cosaia.com/">Cosaia PVT LTD</a></p>
+					<h5 class="text-center">Made by: <a href="http://www.cosaia.com/">Cosaia PVT LTD</a></h5>
 				</div>
 			</div>
 		</div>
@@ -1487,7 +1447,7 @@ function hide_member_details(){
 
 function hide_service_division(){
 
-$("#service_menu").hide();
+$("#hidden_fieldset_id").hide();
 
 }
 
@@ -1496,22 +1456,73 @@ $("#service_menu").hide();
 function show_service_division(service_id){
 
 $("#fieldset_id").fadeOut(500);
-$("#service_menu").fadeIn(2300);
+$("#hidden_fieldset_id").fadeIn(2300);
 
 var temp = service_id.substring(5, 6);
 show_service_content(temp);
 
 }
 
+	
+	function show_service_content(item_id){
+		hide_service_content_division();
+    // alert(item_id);
+		var temp = item_id.substring(13, 14);
+    
+
+
+		if((temp == 1 || item_id == 1)){
+       
+		$("#div1").fadeIn(1000);
+      $('#service_item_1h').css({'font-weight':'bolder'});
+		}
+
+		if((temp == 2 || item_id == 2)){
+       $('#service_item_2h').css({'font-weight':'bolder'});
+			$("#div2").fadeIn(2000);
+		}
+
+		if((temp == 3 || item_id == 3)){
+       $('#service_item_3h').css({'font-weight':'bolder'});
+			$("#div3").fadeIn(2000);
+		}
+		if((temp == 4 || item_id == 4)){
+       $('#service_item_4h').css({'font-weight':'bolder'});
+			$("#div4").fadeIn(2000);
+		}
+			if((temp == 5 || item_id == 5)){
+         $('#service_item_5h').css({'font-weight':'bolder'});
+			$("#div5").fadeIn(2000);
+		}
+		if((temp == 6 || item_id == 6)){
+       $('#service_item_6h').css({'font-weight':'bolder'});
+			$("#div6").fadeIn(2000);
+		}
+		if((temp == 7 || item_id == 7)){
+       $('#service_item_7h').css({'font-weight':'bolder'});
+			$("#div7").fadeIn(2000);
+		}
+		if((temp == 8 || item_id == 8)){
+       $('#service_item_8h').css({'font-weight':'bolder'});
+			$("#div8").fadeIn(2000);
+		}
+
+
+
+	}
+
+
+
+
 function hide_service_content_division(){
-	$("#div1").fadeOut(500);
-	$("#div2").fadeOut(500);
-    $("#div3").fadeOut(500);
-    $("#div4").fadeOut(500);
-    $("#div5").fadeOut(500);
-	 $("#div6").fadeOut(500);
-    $("#div7").fadeOut(500);
-    $("#div8").fadeOut(500);
+	$("#div1").hide();
+	$("#div2").hide();
+    $("#div3").hide();
+    $("#div4").hide();
+    $("#div5").hide();
+	 $("#div6").hide();
+    $("#div7").hide();
+    $("#div8").hide();
 
     $('#service_item_1h').css({'font-weight':'normal'});
     $('#service_item_2h').css({'font-weight':'normal'});
