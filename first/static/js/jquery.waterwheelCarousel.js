@@ -74,10 +74,6 @@
       }
     }
 
-    function say_hey(){
-    
-    }
-
     /**
      * This function will preload all the images in the carousel before
      * calling the passed in callback function. This is only used so we can
@@ -121,6 +117,7 @@
     function setOriginalItemDimensions() {
       data.itemsContainer.find('img').each(function () {
         if ($(this).data('original_width') == undefined || options.forcedImageWidth > 0) {
+          alert($(this).width());
           $(this).data('original_width', $(this).width());
         }
         if ($(this).data('original_height') == undefined || options.forcedImageHeight > 0) {
