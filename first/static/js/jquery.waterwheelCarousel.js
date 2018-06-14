@@ -117,11 +117,12 @@
     function setOriginalItemDimensions() {
       data.itemsContainer.find('img').each(function () {
         if ($(this).data('original_width') == undefined || options.forcedImageWidth > 0) {
-          alert($(this).width());
-          $(this).data('original_width', $(this).width());
+          // alert($(this).width());
+          $(this).data('original_width', 169);
         }
         if ($(this).data('original_height') == undefined || options.forcedImageHeight > 0) {
-          $(this).data('original_height', $(this).height());
+          $(this).data('original_height', 141);
+          // alert($(this).height());
         }
       });
     }
