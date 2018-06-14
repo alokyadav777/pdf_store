@@ -1,16 +1,99 @@
-.heart {
-  fill: black;
-  position: relative;
-  top: 5px;
-  width: 25px;
-  animation: pulse 1s ease infinite, 
+/*start of Media query for  screen resolution <= 400*/
+
+
+@media screen and (max-width: 400px) {
+
+.jssor_class_container{
+	width:330px;
+ 	height : 320px;
+
 }
 
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.3); }
-  100% { transform: scale(1); }
+.legend_class_serv{
+	font-size: 15px !important;
+	margin-left: 70% !important;
+	vertical-align: middle;
+
 }
+
+.service_headline_normal{
+	font-size: 14px !important;
+
+}
+.service_header{
+	font-size: 10px !important;
+
+}
+
+.service_item_row{
+	margin-top: 20px !important;
+}
+
+.images_ico{
+	width: 67% !important;
+}
+
+.about_tagline_class{
+
+font-size: 13px !important;
+}
+
+.legend_class_tagline_class{
+	font-size: 15px !important;
+}
+
+.home_image_class{
+height: 600px !important;
+}
+
+
+.blank_border{
+	border-color: green;
+	border-style: solid;
+	background-color: green;
+}
+
+.submit_button_class{
+	max-width: 100px !important;
+}
+
+.tagline_content{
+    	font-size: 7px;
+    }
+
+.carousel-caption{
+	    top:30% !important;
+}  
+
+.navbar_class{
+	right: -16px !important;
+}
+
+.toggle_div_class{
+	margin-top: 20% !important;
+	
+}
+
+.toggle_image_class{
+	max-width: 30px !important;
+	max-height: 30px !important;
+}
+
+
+p{
+	font-size: 10px;
+}
+
+
+}   
+
+
+
+
+/*start of Media query for  screen resolution <= 400*/
+
+
+
 
 
 .callout {
@@ -163,65 +246,6 @@
 
 
 
-@media screen and (max-width: 400px) {
-
-.jssor_class_container{
-	width:330px;
- 	height : 320px;
-
-}
-
-.blank_border{
-	border-color: green;
-	border-style: solid;
-	background-color: green;
-}
-
-.submit_button_class{
-	max-width: 100px !important;
-}
-
-.tagline_content{
-    	font-size: 7px;
-    }
-
-.carousel-caption{
-	    top: 16% !important;
-}  
-
-.navbar_class{
-	right: -16px !important;
-}
-
-.toggle_div_class{
-	
-}
-
-.toggle_image_class{
-	max-width: 20px;
-	max-height: 20px;
-}
-
-
-.images_ico
-{
-	width: 50% !important;
-	height: 60% !important;
-}
-
-p{
-	font-size: 10px;
-}
-
-}   
-
-
-
-
-
-
-
-
 
 
 
@@ -341,6 +365,9 @@ margin-top: 0%!important;
 
 }
 
+.admin_logo{
+ 
+}
 
 
 .service_open_container{
@@ -690,8 +717,8 @@ height: 50%;
 }
 
 .logo_class{
-	color: #F0C181;
-	font-family: 'Josefin Slab', serif;
+	color: #F0C181 !important;
+	font-family: 'Josefin Slab', serif !important;
 	
 }
 
@@ -735,6 +762,7 @@ font-family: 'Josefin Sans', sans-serif;
 body{
 	 font-size: 18px;
 	font-family: 'Josefin Sans' !important;
+
 
 
 }
