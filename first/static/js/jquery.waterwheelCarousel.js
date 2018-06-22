@@ -706,7 +706,7 @@
     horizonOffset:              -12.5,   // offset each item from the "horizon" by this amount (causes arching)
     horizonOffsetMultiplier:    1,   // multipled by horizon offset to increase/decrease offset for each additional item
     sizeMultiplier:             0.8, // determines how drastically the size of each item changes
-    opacityMultiplier:          0.9, // determines how drastically the opacity of each item changes
+    opacityMultiplier:          1, // determines how drastically the opacity of each item changes
     horizon:                    0,   // how "far in" the horizontal/vertical horizon should be set from the container wall. 0 for auto
     flankingItems:              3,   // the number of items visible on either side of the center                  
 

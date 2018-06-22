@@ -46,6 +46,12 @@ font-size: 13px !important;
 height: 600px !important;
 }
 
+.cover_image_class{
+    width: 102% !important;
+    height: 450px !important;
+    padding: 3% !important;
+    padding-top: 1% !important;
+}
 
 .blank_border{
 	border-color: green;
@@ -352,6 +358,7 @@ p{
 
 .service_col_content{
 	display: none;
+	padding-right:0 !important;
 }
 
 
@@ -360,9 +367,27 @@ p{
 }
 
 .fieldset_class_service{	
-margin: 8%;
-margin-top: 0%!important;
+margin-right: 5%;
+margin-bottom: 8%;
 
+
+background-color:white;
+
+
+}
+
+.nav_service_class_div{
+background: rgb(240,193,129,0.3);
+    margin-top: 3% !important;
+
+}
+
+.service_bckg_color_division{
+
+background: rgb(240,193,129,0.3);
+
+
+padding-bottom: 0.1%;
 }
 
 .admin_logo{
@@ -370,18 +395,63 @@ margin-top: 0%!important;
 }
 
 
+.service_crossicon_class{
+
+	margin-left: 97% !important;
+	max-width: 20px !important;
+	margin-top: -29px !important;
+
+
+}
+
+.team_crossicon_class{
+	position: absolute;
+
+	/*margin-left: 100% !important;*/
+	
+margin-left: 94.7%;
+    margin-top: -3.4%;
+}
+
+.service_crossicon_class:hover{
+	cursor: pointer;
+
+
+}
+
+.service_div_content::-webkit-scrollbar {
+background-color: transparent;
+
+}
+
+.service_div_content{
+	overflow:scroll;height:390px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #F0C181; 
+    border-radius: 8px;
+    width: 2px;
+}
+
+
 .service_open_container{
 	/*margin-top: 2%;
 	margin-bottom: 2%;
 */
-	
+margin-bottom: 2.2%;
 	
 }
+
 .career_field_class{
 	border-color: #F0C181;
 	border-style: solid;
 	border-width: 3px !important;
 	background-color: white;
+	    margin: 3.4% !important;
+    margin-top: 0.5% !important;
 }
 
 
@@ -392,6 +462,17 @@ margin-top: 0%!important;
 
 .legend_class_team{
 	font-size: 30px;
+	margin-left: 3%;
+
+}
+
+
+.fieldset_class_contact{
+
+background-color:white;
+    margin: 3%;
+    margin-top: 0% !important;
+
 }
 
 .legend_class_serv{
@@ -431,10 +512,13 @@ h6{
 }
 
 
+
+
+
 .address_container{
 	
 	margin-left: 0!important;
-	    margin-top: -2.6%;
+	margin-top: -1.6%;
 	padding: 1%;
 	background-color: white;
 }
@@ -443,6 +527,97 @@ h6{
 	border-color: #F0C181 !important;
 	border-width: 2px !important;
 }
+
+
+
+
+
+.serv_business_underline_class{
+
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+}
+.serv_business_underline_class:before{
+    content: "";
+    position: absolute;
+    width: 44%;
+
+    bottom: 0;
+    left: 1%;
+    border-bottom: 2px solid #F0C181;
+}
+
+.team_underline_class{
+
+display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+
+
+}
+
+
+
+.team_underline_class:before{
+content: "";
+    position: absolute;
+    width: 46%;
+
+    bottom: 0;
+    left: 1%;
+    border-bottom: 2px solid #F0C181;
+
+}
+
+
+.width_change_audit:before{
+
+width:22% !important;
+}
+
+.width_change_fin:before{
+
+width:46% !important;
+}
+
+.width_change_tax:before{
+
+width:96% !important;
+}
+
+.width_change_business:before{
+
+width:44% !important;
+}
+
+.width_change_tran:before{
+
+width:51% !important;
+}
+
+.width_change_ipo:before{
+
+width:20% !important;
+}
+
+.width_change_start:before{
+
+width:37% !important;
+}
+
+.width_change_man:before{
+
+width:51% !important;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -458,9 +633,17 @@ textarea:focus {
     box-shadow: none !important;
 }
 
+.bck_service_division_hidden{
+
+background: rgb(240,193,129,0.3);
+padding-bottom:2%;
+
+}
+
 .contact_page_container_class{
 	padding: 3%;
-	background: rgb(240,193,129,0.6);
+	background: rgb(240,193,129,0.3);
+	margin-top:-0.5% !important;
 }
 
 .adress_class{
@@ -524,6 +707,11 @@ height:400px !important;
 overflow:hidden;
 }
 
+.crossicon_button_class{
+width: 20px !important;
+color:  #8B8C8C;
+}
+
 .member_info_class{
 	
 	width: 96%;
@@ -536,9 +724,11 @@ overflow:hidden;
 }
 .main_team_container_class{
 	background-color: white;
-	
-	
+
 	height: 370px;
+	margin-top:2%;
+	    margin-bottom: 10%;
+
 }
 
 
@@ -578,6 +768,78 @@ display:none;
 
 }
 
+.readmore_button_class{
+margin-left:20%;
+background-color: #F0C181;
+	width: 170px !important;
+	border-color: #F0C181 !important;
+	box-shadow: none !important;
+}
+
+
+.blogImage_class{
+float: left;
+width:350px;
+height:170px;
+margin-right:1.8%;
+margin-bottom:1.2%;
+margin-top:1%;
+
+
+}
+
+.blog_details_class{
+
+margin: 4% !important;
+background-color:white;
+border-color: #F0C181;
+	border-style:solid;
+	border-width: 3px;
+	padding:2%;
+
+
+}
+
+.blog_header_details{
+line-height:1.5;
+margin-top:1%;
+}
+
+.blog_des_division_class{
+background: rgb(240,193,129,0.3);
+padding-top:1.2%;
+padding-bottom:1.2%;
+
+}
+
+.cosaia_class{
+text-decoration:none;
+color:black;
+}
+
+.cosaia_class:hover{
+
+text-decoration:none;
+}
+
+.hidden_service_icon_class{
+position:absolute;
+margin-bottom: 69px;
+    margin-top: -19%;
+    margin-left: 75%;
+}
+
+.hidden_service_startup_icon_class{
+position:absolute;
+margin-bottom: 69px;
+    margin-top: -19%;
+    margin-left: 72%;
+}
+
+.fieldset_team_slider{
+background-color:transparent;
+}
+
 .image_class{
 	border-color: #F0C181;
 	border-style:solid;
@@ -592,19 +854,19 @@ display:none;
 }
 
 .career_body_container{
-	background: rgb(240,193,129,0.5);
+	background: rgb(240,193,129,0.3);
 	padding: 3%;
 	margin-bottom: 3%;
 }
 
 .blog_body_container{
-background: rgb(240,193,129,0.5);
+background: rgb(240,193,129,0.3);
 	padding: 3%;
 	margin-bottom: 2.5%;
 }
 
  .jssor_class_container{
- 	background-color: white;
+ 	background-color: transparent !important;
  	position:relative;
  	
  	top:10%;
@@ -631,8 +893,7 @@ background: rgb(240,193,129,0.5);
 .member_image_class{
 width:17%;
 height: 31%;
-margin-top: -16%;
-
+margin-top: -16% !important;
 
 }
 
@@ -676,7 +937,7 @@ text-decoration: none !important;
 .service_container{
 
 
-	background: rgb(240,193,129,0.2);
+	background: rgb(240,193,129,0.3);
 	
 	
 	/*border-color: #F0C181;
@@ -719,7 +980,16 @@ height: 50%;
 .logo_class{
 	color: #F0C181 !important;
 	font-family: 'Josefin Slab', serif !important;
-	
+
+
+
+}
+
+.jesalpura_logo_class{
+
+padding-left:0 !important;
+	padding-right:65px !important;
+
 }
 
 .nav-link{
@@ -825,6 +1095,19 @@ body{
 
 }
 
+.hidden_team_bck_class{
+
+padding-bottom:2%;
+
+}
+
+.nav_divison_class{
+
+margin-top:5%;
+
+}
+
+
 .toggle_image_class{
 	max-width: 30px;
 	max-height: 40px;
@@ -847,7 +1130,7 @@ margin-left: 1%;
 }
 
 .navMenu{
-	padding-top: 3%;
+	padding-top: 2%;
 	
 }
 
@@ -876,7 +1159,9 @@ margin-left: 1%;
 	display: none;
 	margin: 5%;
     margin-top: 0 !important;
-    padding-bottom: 1%;
+    padding-bottom: 0%;
+    background-color:white;
+    margin-left:0 ;
 
 }
 
@@ -893,6 +1178,8 @@ margin-left: 1%;
 background: rgb(240,193,129,0.2);
 	
 */
+
+    margin-top: -23px;
 
 }
 .col_content{

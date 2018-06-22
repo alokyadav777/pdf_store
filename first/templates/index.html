@@ -15,10 +15,8 @@
 	    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 		
-
-
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 
 
 
@@ -28,9 +26,10 @@
     
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600|Josefin+Slab:300,300i,400,600i,700,700i" rel="stylesheet">
 		
-		<!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,600i,700,700i" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab:300,300i,400,600i,700,700i" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
 
 		<!-- Link added for stylish corousel for team list --->
 
@@ -124,14 +123,17 @@
       }
 
       #carousel {
-        width:1000px;
+        width: 1071px;
+        margin: 0 auto;
+        margin-top:-2% !important;
         /*border:2px solid #F0C181;*/
         margin: 0 auto;
-        height:460px;
+        height:501px;
         position:relative;
         clear:both;
         overflow:hidden;
         background:#FFF;
+        margin-bottom:7% !important;
     
         /*background-color: red;*/
 
@@ -176,8 +178,8 @@
 
 	    	<nav  class="navbar navbar-expand-lg navbar fixed-top navbar_class justify-content-center navbar-light bg-light ">
 	   			<div class="row menu_style">
-			 		<a class="navbar-brand" href="#Logo">
-	    				<a class="nav-link " href="" style="color:white;" > <h4 class="logo_class" ><b> Patel & Jesalpura </b> </h4></a>
+			 		<a class="navbar-brand " href="#Logo">
+	    				<a class="nav-link jesalpura_logo_class" href="" style="color:white;" > <h4 class="logo_class" ><b> Patel & Jesalpura </b> </h4></a>
 	    				
 			 		</a>
 
@@ -244,6 +246,8 @@
 								ismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
 								minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
 								ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+                                    tation ullamcorper suscipit lobortis nisl ut aliquip
+								ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
 								</p>
 
 						   	</div>
@@ -274,7 +278,7 @@
 
 			<!--- Service page started-->
 		
-		 	<div class="row" id="Services" style="margin-top: 5%;">
+		 	<div class="row nav_service_class_div" id="Services" style="margin-top: 5%;">
        
 	    		<div class="col navMenu">
 	     		 
@@ -282,6 +286,7 @@
   			</div>
 
 
+<div class="service_bckg_color_division">
 
 <fieldset id="fieldset_id" class=" fieldset_class fieldset_class_service">
   <legend class="legend_class_serv"><b class="b_class">SERVICES</b></legend>
@@ -296,20 +301,20 @@
                 </div>
 
 
-                <div class="service_title"> 
+                <div class="service_title">
                   <h6 ><b class="service_headline_normal"> Audit And Assurance </b> </h6>
                 </div>
               </div>
 
 
-              <div class="col service_col">
+              <div class="col service_col ">
                 <div class="container service_image">
                   <a id ="item-3_service" href="#" onclick="show_service_division(this.id);return false">
                       <img class="images_ico image-responsive" src="{% static 'images/service_ico8.png' %}" > </a>
                 </div>
 
 
-                <div class="service_title"> 
+                <div class="service_title">
                   <h6 style="margin-left: 2% !important;"><b class="service_headline_normal"> Business Advisory </b></h6>
                 </div>
               </div>
@@ -322,7 +327,7 @@
                       <img class="images_ico image-responsive" src="{% static 'images/service_ico1.png' %}" > </a>
                 </div>
 
-                <div class="service_title"> 
+                <div class="service_title">
                   <h6 style="margin-left: 2% !important;"><b class="service_headline_normal"> Financial Advisory </b></h6>
                 </div>
               </div>
@@ -333,11 +338,11 @@
                       <img class="images_ico image-responsive"  src="{% static 'images/service_ico4.png' %}" > </a>
                 </div>
 
-                <div class="service_title"> 
+                <div class="service_title">
                   <h6 ><b class="service_headline_normal"> Transaction Advisory </b></h6>
                 </div>
               </div>
-             
+
           </div>
 
 
@@ -349,7 +354,7 @@
                       <img class="images_ico image-responsive" src="{% static 'images/service_ico2.png' %}" > </a>
                 </div>
 
-                <div class="service_title"> 
+                <div class="service_title">
                   <h6 style="margin-left: 13% !important;" ><b class="service_headline_normal">Taxation </b></h6>
                 </div>
               </div>
@@ -361,7 +366,7 @@
                       <img class="images_ico image-responsive" src="{% static 'images/service_ico7.png' %}" > </a>
                 </div>
 
-                <div class="service_title"> 
+                <div class="service_title">
                   <h6 ><b class="service_headline_normal">Management Consulting</b ></h6>
                 </div>
               </div>
@@ -374,7 +379,7 @@
                       <img class="images_ico image-responsive" src="{% static 'images/service_ico6.png' %}" > </a>
                 </div>
 
-                <div class="service_title"> 
+                <div class="service_title">
                   <h6 style="margin-left: 6% !important;" ><b class="service_headline_normal"> IPO Consulting </b> </h6>
                 </div>
               </div>
@@ -385,19 +390,24 @@
                       <img class="images_ico image-responsive" src="{% static 'images/service_ico5.png' %}" > </a>
                 </div>
 
-                <div class="service_title"> 
+                <div class="service_title">
                   <h6 > <b class="service_headline_normal">Startup Consulting </b > </h6>
                 </div>
               </div>
-             
+
           </div>
-          
+
 
 
         </div>
 
 
 </fieldset>
+
+</div>
+
+
+
 
   			
 
@@ -406,8 +416,14 @@
 
   			<!---  Create service menu for above division---->
 
-  			<fieldset id="hidden_fieldset_id" class="fieldset_class hidden_service_container">
+        <div class="bck_service_division_hidden">
+
+            <fieldset id="hidden_fieldset_id" class="fieldset_class hidden_service_container">
                 <legend class="legend_class_serv"><b> SERVICES </b></legend>
+
+
+         <img class="service_crossicon_class"  onclick="restore_service_division();return false" src="{% static 'images/cross.png' %}" width="22px;height:22px">
+
 
                 <div id="service_menu" class="">
 
@@ -424,8 +440,8 @@
   								<a id="service_item_2" class="service_item" href="" onclick="show_service_content(this.id);return false">
                    <h4 id="service_item_2h" class="service_header"> TAXATION </h4></a>
   							</div>
-  							
-  								
+
+
   							<div class="row service_item_row ">
   								<a id="service_item_3" class="service_item" href="" onclick="show_service_content(this.id);return false">
                     <h4 id="service_item_3h" class="service_header"> BUSINESS ADVISORY </h4></a>
@@ -441,7 +457,7 @@
   							<div class="row service_item_row ">
   								<a id="service_item_5" class="service_item" href="" onclick="show_service_content(this.id);return false">
                   <h4 id ="service_item_5h" class="service_header">  TRANSACTION ADVISORY </h4></a>
-                  
+
   							</div>
 
   							<div class="row service_item_row ">
@@ -449,8 +465,8 @@
                      <h4 id= "service_item_6h" class="service_header">  MANAGEMENT CONSULTING </h4></a>
 
   							</div>
-  							
-  								
+
+
   							<div class="row service_item_row ">
   								<a id="service_item_7" class="service_item" href="" onclick="show_service_content(this.id);return false">
                 <h4 id="service_item_7h" class="service_header">  IPO CONSULTING </h4></a>
@@ -460,19 +476,20 @@
   							<div class="row service_item_row ">
   								<a id="service_item_8" class="service_item" href=""  onclick="show_service_content(this.id);return false">
                   <h4 id="service_item_8h" class="service_header">   STARTUP CONSULTING</h4></a>
-                  
+
   							</div>
 
-  											
-  						
+
+
   					</div>
 
 
             <div id="div1" class="col-10 service_col_content callout right first_service">
                 <div class="callout-inner">
-                    <div class="callout-content">
-                        <h5><b>Audit And Aussrance </b></h5> 
+                    <div class="callout-content service_div_content" >
+                        <h5 class="serv_business_underline_class width_change_audit"><b>Audit And Aussrance </b></h5>
                 <p>
+
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
           erat volutpat. Ut wisi enim ad shweta veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conse-
           quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
@@ -488,18 +505,35 @@
           quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+                     velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+           commodo conse-
+          quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+
                 </p>
 
+
              </div>
+                    <div class="hidden_service_icon_class">
+                        <img src="{% static 'images/service_ico3.png' %}" style="opacity:0.4">
+
+                     </div>
+
                 </div>
+
+
+
             </div>
 
 
 
             <div id="div2" class="col-10 service_col_content callout right second_service">
                 <div class="callout-inner">
-                    <div class="callout-content">
-                        <h5><b>Taxation</b></h5>
+                    <div class="callout-content service_div_content" >
+                        <h5 class="serv_business_underline_class width_change_tax"><b>Taxation</b></h5>
+
                  <p>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
           erat volutpat. Ut wisi enim ad shweta veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conse-
@@ -516,17 +550,29 @@
           quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+                       commodo conse-
+          quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
                 </p>
 
              </div>
-                </div>
+
+                    <div class="hidden_service_icon_class">
+                        <img src="{% static 'images/service_ico2.png' %}" style="opacity:0.4">
+
+                     </div>
+
             </div>
+
+          </div>
 
 
             <div id="div3" class="col-10 service_col_content callout right third_service">
                 <div class="callout-inner">
-                    <div class="callout-content">
-                        <h5><b>Business Advisory</b> </h5>
+                    <div class="callout-content service_div_content" >
+                        <h5 class="serv_business_underline_class width_change_business"><b>Business Advisory</b> </h5>
 
                 <p>
                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
@@ -544,17 +590,28 @@
           quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+                       commodo conse-
+          quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
                 </p>
 
              </div>
+
+                    <div class="hidden_service_icon_class">
+                        <img src="{% static 'images/service_ico8.png' %}" style="opacity:0.4">
+
+                     </div>
                 </div>
+
             </div>
 
 
             <div id="div4" class="col-10 service_col_content callout right fourth_service">
                 <div class="callout-inner">
-                    <div class="callout-content">
-                        <h5> <b>Financial Advisory</b></h5>
+                    <div class="callout-content service_div_content" >
+                        <h5 class="serv_business_underline_class width_change_fin"> <b>Financial Advisory</b></h5>
 
 
                <p>
@@ -573,18 +630,30 @@
           quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+                       commodo conse-
+          quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
                 </p>
 
              </div>
+
+                    <div class="hidden_service_icon_class">
+                        <img src="{% static 'images/service_ico1.png' %}" style="opacity:0.4">
+
+                     </div>
+
                 </div>
+
             </div>
 
 
 
             <div id="div5" class="col-10 service_col_content callout right fifth_service">
                 <div class="callout-inner">
-                    <div class="callout-content">
-                        <h5><b> Transaction Advisory</b></h5>
+                    <div class="callout-content service_div_content" >
+                        <h5 class="serv_business_underline_class width_change_tran"><b> Transaction Advisory</b></h5>
 
 
 
@@ -604,19 +673,31 @@
           quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+                       commodo conse-
+          quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
                 </p>
 
              </div>
+
+                    <div class="hidden_service_icon_class">
+                        <img src="{% static 'images/service_ico4.png' %}" style="opacity:0.4">
+
+                     </div>
+
                 </div>
+
             </div>
-  						
+
 
 
             <div id="div6" class="col-10 service_col_content callout right sixth_service">
                 <div class="callout-inner">
-                    <div class="callout-content">
-                        <h5> <b>Management Consulting</b></h5>
- 
+                    <div class="callout-content service_div_content" >
+                        <h5 class="serv_business_underline_class width_change_man"> <b>Management Consulting</b></h5>
+
 
 
                   <p>
@@ -635,18 +716,30 @@
           quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+                       commodo conse-
+          quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
                 </p>
 
              </div>
+
+                    <div class="hidden_service_icon_class" style="margin-left: 73% !important">
+                        <img src="{% static 'images/service_ico7.png' %}" style="opacity:0.4">
+
+                     </div>
+
                 </div>
+
             </div>
 
 
             <div id="div7" class="col-10 service_col_content callout right seventh_service">
                 <div class="callout-inner">
-                    <div class="callout-content">
-                        <h5><b>Ipo Consulting</b></h5>
- 
+                    <div class="callout-content service_div_content" >
+                        <h5 class="serv_business_underline_class width_change_ipo"><b>Ipo Consulting</b></h5>
+
 
 
                   <p>
@@ -665,18 +758,32 @@
           quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+                       commodo conse-
+          quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
                 </p>
 
              </div>
+
+                    <div class="hidden_service_icon_class" style="margin-left: 72% !important">
+                        <img src="{% static 'images/service_ico6.png' %}" style="opacity:0.4">
+
+                     </div>
+
+
+
                 </div>
+
             </div>
 
 
   							<div id="div8" class="col-10 service_col_content callout right eighth_service">
                 <div class="callout-inner">
-                    <div class="callout-content">
-                        <h5> <b>Startup Consulting</b></h5>
- 
+                    <div class="callout-content service_div_content">
+                        <h5 class="serv_business_underline_class width_change_start"> <b>Startup Consulting</b></h5>
+
 
 
                   <p>
@@ -695,24 +802,33 @@
           quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+                       commodo conse-
+          quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
                 </p>
 
              </div>
+
+                    <div class="hidden_service_startup_icon_class">
+                        <img src="{% static 'images/service_ico5.png' %}" style="opacity:0.4">
+
+                     </div>
+
                 </div>
+
+
             </div>
 
-
-
-
-
-  					</div>
+                    </div>
   				</div>
-
 
   			</div>
 
-
             </fieldset>
+
+        </div>
 
 
 
@@ -730,7 +846,7 @@
 
 
 
-			<div class="row" id="Team">
+			<div class="row nav_divison_class" id="Team">
 				<div class="col navMenu1">
 	     		 	
 				</div>
@@ -738,14 +854,14 @@
 
 			<div id="team_slider" class="container main_team_container_class">
 
-				<fieldset class="fieldset_class">
+				<fieldset class="fieldset_class fieldset_team_slider">
       <legend class="legend_class" style="margin-left: 3%;"><b class="team_class">TEAM </b></legend>    
       <div id="jssor_1" class ="container jssor_class_container">
        
             <div id="TeamContainer" class="container team_container_class" data-u="slides" >
 
               
-              <div class="container member_item" data-p="43.75" >                  
+              <div class="container member_item" data-p="43.75" >
                   <div class="container image_member_container">
                  
                     <a id="team_1" href="" onclick="show_team_division(this.id);return false" >
@@ -828,14 +944,23 @@
                     
               </div>
 
+              
+
 
            
             </div>
+
+
       
       </div>
         </fieldset>
 
+
+
+
 			</div>
+
+
 
 
   			
@@ -843,12 +968,14 @@
 		
 			
 
-		<!--- Stylish corousel for displaying team  --->
+	<div class="hidden_team_bck_class">
+
+        	<!--- Stylish corousel for displaying team  --->
     <fieldset id="carousel" class="container fieldset_class corousel_container_class">
-        
+
         <legend class="legend_class legend_class_team"><b style="vertical-align: middle;"> TEAM </b> </legend>
-        
-          
+
+
           <div class="container member_image_list_class">
 
                   <img class="img-responsive member_image_class"   src="{% static 'images/new_member.png' %}" id="item-1" onclick="show_member_details(this.id);return false" />
@@ -862,113 +989,124 @@
                   <img class="img-responsive member_image_class"  src="{% static 'images/new_member4.png' %}" id="item-5" onclick="show_member_details(this.id);return false"/>
 
 
-              </div>  
+              </div>
 
-              <div id="one" class="container member_description_class">
-                 <h4><b>Hiren Patel</b></h4>
+              <div id="one" class="container member_description_class" >
+                 <h4 class="team_underline_class"><b>Hiren Patel</b></h4>
                  <p>(Degree Info)</p>
-                
+
                   <p class="member_biodata_class">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                Hirel Patel  dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
           erat volutpat. Ut wisi enim ad shweta veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conse-
-          quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+          quat. Duis autem vel euHirel Patel  dolor sit amet, consectetuete
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
            commodo conse-
-          quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+          quat. Duis autem vel eumHirel Patel  dolor sit amet, consectetueulputate
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
-           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
-            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+           velit esse molestie consequatHirel Patel  dolor sit amet, consectetue ut aliquip ex ea commodo consequat.
+            velit esse molestie consHirel Patel  dolor sit amet, consectetueipit lobortis nisl ut aliquip ex ea commodo consequat.
            commodo conse-
-          
+                      Hirel Patel  dolor sit amet, consectetue Hirel Patel  dolor sit amet, consectetue
+
+
             </p>
+
               </div>
 
 
                <div id="two" class="container member_description_class">
-                 
-                  <h4><b>Ashok Patel</b></h4>
+
+                  <h4 class="team_underline_class"><b>Ashok Patel</b></h4>
                  <p>(Degree Info)</p>
 
                   <p class="member_biodata_class">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                  Ashok Patel dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
           erat volutpat. Ut wisi enim ad shweta veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conse-
-          quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+          quat. Duis autem vel eum iriure dAshok Patel dolor sit ametulputate
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
            commodo conse-
           quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
-           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
-            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+           velit esse molestie consequat.ullaAshok Patel dolor sit amettis nisl ut aliquip ex ea commodo consequat.
+           velit esse molestie consequat.ullamcAshok Patel dolor sit ametut aliquip ex ea commodo consequat.
+            velit esse molestAshok Patel dolor sit ametisl ut aliquip ex ea commodo consequat.
            commodo conse-
-          
+
             </p>
               </div>
 
 
 
                <div id="three" class="container member_description_class">
-                 <h4><b>Jignesh Parikh </b></h4>
+                 <h4 class="team_underline_class"><b>Jignesh Parikh </b></h4>
                  <p>(Degree Info)</p>
-              
+
                   <p class="member_biodata_class">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                  Jignesh Parikh dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
           erat volutpat. Ut wisi enim ad shweta veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conse-
-          quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+          quat. Duis autem vel eum iriure doloJignesh Parikh dolor sit amette
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
            commodo conse-
-          quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+          quat. Duis autem velJignesh Parikh dolor sit ametrit in vulputate
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
-           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
-            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+           velit esse molestie Jignesh Parikh dolor sit ameticipit lobortis nisl ut aliquip ex ea commodo consequat.
+            velit esse molestie consequat.ullamcosakshicipit lobortis Jignesh Parikh dolor sit ametcommodo consequat.
            commodo conse-
-          
+
             </p>
               </div>
 
 
 
         <div id="four" class="container member_description_class">
-                 <h4><b>Sunil Patel</b></h4>
+                 <h4 class="team_underline_class"><b>Sunil Patel</b></h4>
                   <p>(Degree Info)</p>
                   <p class="member_biodata_class">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-          erat volutpat. Ut wisi enim ad shweta veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conse-
-          quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+                  Sunil Patel dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+          erat volutpat. Ut wisi enim ad shweta veniam, qSunil Patel doloron ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conse-
+          quat. DuiSunil Patel dolorn hendrerit in vulputate
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
            commodo conse-
-          quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+          quat. Duis autem vel eum iriure dolor in hSunil Patel dolortate
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
-           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+           velit esse molestie consequeelkanth dolor sit amet,icipit lobortis nisl ut aliquip ex ea commodo consequat.
             velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
            commodo conse-
-          
+
             </p>
               </div>
 
                <div id="five" class="container member_description_class">
-                 <h4><b>Neelkanth</b> </h4>
+                 <h4 class="team_underline_class"><b>Neelkanth</b> </h4>
                  <p>(Degree Info) </p>
-                 
+
                   <p class="member_biodata_class">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                  Neelkanth dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
           erat volutpat. Ut wisi enim ad shweta veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo conse-
           quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
            commodo conse-
-          quat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+          quat. Duis autem vel eum ireelkanth dolor sit amet,rerit in vulputate
            velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
-           velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
+           velit esse molestie coneelkanth dolor sit amet,lobortis nisl uteelkanth dolor sit amet,consequat.
             velit esse molestie consequat.ullamcosakshicipit lobortis nisl ut aliquip ex ea commodo consequat.
            commodo conse-
-          
+
             </p>
               </div>
-        
 
 
 
-        
+        <div>  <p class="team_crossicon_class" onclick="restore_team_division();return false">
+          <button type="button" class="close crossicon_button_class" aria-label="Close">
+  <span style="font-size: 55px;" aria-hidden="true">&times;</span>
+</button>
+        </div>
     </fieldset>
+
+
+    </div>
+
+
 
 	
 
@@ -984,14 +1122,14 @@
 			<!--- Start of Careers   --->
 
 
-		<div class="row " id="Careers" style="margin-top: 5%;" >
-			<div class="col career_nav_menu">
+		<div class="row " id="Careers"  >
+			<div class="col ">
 				
 
 			</div>
 		</div>
 
-<div  class="container career_body_container">
+<div  class=" career_body_container">
 
   <fieldset class="career_field_class">
     <legend class="legend_class" style="margin-left: 3%;" ><b class="career_class">CAREER</b></legend>
@@ -1046,23 +1184,23 @@
         {% csrf_token %}
              <label for="name">Name</label>
 
-         <input type="text" class="form-control input_class" id="fullname"name="fname">
+         <input type="text" class="form-control input_class" id="fullname"name="fname" required>
         <br>
 
         <label for="Email">Email</label>
 
-        <input type="email" class="form-control input_class" id="email_id"  name="email">
+        <input type="email" class="form-control input_class" id="email_id"  name="email" required>
         <br>
 
         <label>Phone Number</label>
 
-        <input type="number" class="form-control input_class" id="phone_number"  name="phone">
+        <input type="number" class="form-control input_class" id="phone_number"  name="phone" required>
                 <br>
 
 
             <label>Attach Your Resume</label>
 
-        <input type="file" id="myfile" name="myfile" class="input_class">
+        <input type="file" id="myfile" name="myfile" class="input_class" required>
  <br>
 
         </div>
@@ -1112,106 +1250,41 @@
 			</div>
 		</div>
 
-<div  class="container blog_body_container">
+<div  class=" blog_body_container">
 
   <fieldset class="career_field_class">
     <legend class="legend_class" style="margin-left: 3%;" ><b class="career_class">BLOG</b></legend>
 
-    <div class="container careers_container">
+    <div class="container ">
 
+<div class="row" style="margin-left:2%">
 
-      
+{% for i in blog_list %}
 
+        <div class="col-sm-4 " style="margin-bottom:3%">
 
-  <div class="row">
-          <div class="col-sm-4">
+              <div class="card" style="width: 21rem; height: 27rem;">
 
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{% static 'images/blog_sample.jpg' %}" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title"><b>Card title 1</b></h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="bloghome/" class="btn submit_button_class">Coming Soon</a>
+                    <img class="card-img-top" src="{{i.blogImage}}" alt="Card image cap">
+                  <h5 class="card-title" style="margin-top:15px !important"><b>{{i.blogTitle}}</b></h5>
+                  <p class="card-text">{{i.blogDescription}}</p>
+                <a onclick="fun();" class="btn readmore_button_class">Read More</a>
                 </div>
+
             </div>
+
+ </div>
+{% endfor  %}
+
+
+
+
+
 
         </div>
 
-       <div class="col-sm-4">
-
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{% static 'images/blog_sample.jpg' %}" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title"><b>Card title 2</b></h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="bloghome/" class="btn submit_button_class">Coming Soon</a>
-                </div>
-            </div>
-
-        </div>
-
-      <div class="col-sm-4">
-
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{% static 'images/blog_sample.jpg' %}" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title"><b>Card title 3</b></h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="bloghome/" class="btn submit_button_class">Coming Soon</a>
-                </div>
-            </div>
-
-        </div>
-
-</div>
-
-
-<div class="row"  style="margin-top: 30px;">
-          <div class="col-sm-4">
-
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{% static 'images/blog_sample.jpg' %}" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title"><b>Card title 4</b></h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="bloghome/" class="btn submit_button_class">Coming Soon</a>
-                </div>
-            </div>
-
-        </div>
-
-
-        <div class="col-sm-4">
-
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{% static 'images/blog_sample.jpg' %}" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title"><b>Card title 5</b></h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="bloghome/" class="btn submit_button_class">Coming Soon</a>
-                </div>
-            </div>
-
-        </div>
-
-      <div class="col-sm-4">
-
-              <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{% static 'images/blog_sample.jpg' %}" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title"><b>Card title 6</b></h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="bloghome/" class="btn submit_button_class">Coming Soon</a>
-                </div>
-            </div>
-
-        </div>
-
-</div>
-
-
-
-      </div>
+    </div>
 
   </fieldset>
 
@@ -1237,10 +1310,10 @@
 
 
 
-			<div class="container contact_page_container_class">
+			<div class=" contact_page_container_class">
 
-        <fieldset class="fieldset_class">
-          <legend class="legend_class" style="margin-left: 3%;"><b class="career_class">CONTACT</b></legend>
+        <fieldset class="fieldset_class fieldset_class_contact">
+          <legend class="legend_class" style="margin-left: 3%; vertical-align:middle;"><b class="career_class">CONTACT</b></legend>
 
           <div class="address_container">
       
@@ -1323,6 +1396,13 @@
                            
         });
 
+function fun(){
+
+
+    window.open("blog_description/");
+
+
+}
         
       </script>
 
@@ -1364,7 +1444,7 @@ function openmap() {
 					<h5 class="text-center">Copyright &copy; 2018</h5>
 				</div>
 				<div class="col">
-					<h5 class="text-center">Made by: <a href="http://www.cosaia.com/">Cosaia PVT LTD</a></h5>
+					<h5 class="text-center">Made with <img src="{% static 'images/heart.png' %}" style="width:30px" > By: <a class="cosaia_class" href="http://www.cosaia.com/">Cosaia PVT LTD</a></h5>
 				</div>
 			</div>
 		</div>
@@ -1407,6 +1487,25 @@ function openmap() {
 
 
 }
+
+function restore_service_division(){
+  $("#hidden_fieldset_id").fadeOut(500);
+ $("#fieldset_id").fadeIn(2300);
+
+
+}
+
+function restore_team_division(){
+  
+  $("#carousel").hide();
+  $("#team_slider").show();
+
+
+}
+
+
+
+
 
 function show_team_division(id){
 	// alert(id);
@@ -1451,6 +1550,19 @@ $("#hidden_fieldset_id").hide();
 
 }
 
+
+function call_ajax(){
+
+
+
+   $.ajax({url: "admin_page/", success: function(result){
+   alert("sakshi");
+        }});
+
+
+
+
+}
 
 
 function show_service_division(service_id){
