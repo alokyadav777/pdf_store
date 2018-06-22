@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a6de5e7-d57e-47f2-90f7-fa178d9acf8d" name="Default" comment="" />
+    <list default="true" id="9a6de5e7-d57e-47f2-90f7-fa178d9acf8d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/pdf_store/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pdf_store/settings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/first/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="944" column="20" lean-forward="true" selection-start-line="944" selection-start-column="20" selection-end-line="944" selection-end-column="20" />
+            <state relative-caret-position="150">
+              <caret line="951" lean-forward="true" selection-start-line="951" selection-end-line="951" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h6#0;n#div#1;n#div#1;n#div#0;n#div#0;n#fieldset#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -71,6 +73,15 @@
                 <element signature="n#style#0;n#b#0;n#legend#0;n#fieldset#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#h5#0;n#div#2;n#div#13;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pdf_store/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="27" column="71" lean-forward="true" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -181,10 +192,11 @@
         <option value="$PROJECT_DIR$/first/templates/blogDescription.html" />
         <option value="$PROJECT_DIR$/first/static/css/style.css" />
         <option value="$PROJECT_DIR$/first/templates/index.html" />
+        <option value="$PROJECT_DIR$/pdf_store/settings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="60" />
     <option name="y" value="37" />
     <option name="width" value="1291" />
@@ -268,7 +280,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="25" width="1311" height="743" extended-state="7" />
+    <frame x="55" y="25" width="1311" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18400621" />
@@ -316,13 +328,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pdf_store/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/first/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2790">
@@ -758,8 +763,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="944" column="20" lean-forward="true" selection-start-line="944" selection-start-column="20" selection-end-line="944" selection-end-column="20" />
+        <state relative-caret-position="150">
+          <caret line="951" lean-forward="true" selection-start-line="951" selection-end-line="951" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h6#0;n#div#1;n#div#1;n#div#0;n#div#0;n#fieldset#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -782,6 +787,13 @@
             <element signature="n#style#0;n#b#0;n#legend#0;n#fieldset#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#h5#0;n#div#2;n#div#13;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdf_store/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="71" lean-forward="true" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
         </state>
       </provider>
     </entry>
